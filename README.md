@@ -1,8 +1,8 @@
 Yann - Personal WebSite
 =======================
 
-This is source code of my personal website :)
-Is homemade framework with Twig template engine.
+This is source code of my personal website :)  
+It's home-made framework with Twig template engine.
 
 Installation
 ------------

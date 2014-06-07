@@ -9,173 +9,173 @@
 
 class Cache
 {
-	private $path;
-	private $expire;
-	private $errors = array();
+    private $path;
+    private $expire;
+    private $errors = array();
 
-	public function __construct()
-	{
-		$this->path = APP.DS.Conf::$cache['path'];
-		$this->default_expire = Conf::$cache['default_expires'];
-	}
+    public function __construct()
+    {
+        $this->path = APP.DS.Conf::$cache['path'];
+        $this->default_expire = Conf::$cache['default_expires'];
+    }
 
-	/**
-	* Obtenir le contenu d'un fichier cache.
-	* @param $filename Nom du fichier cache
-	**/
-	public function get($filename = null)
-	{
-		$filename = str_replace('/', DS, $filename);
+    /**
+    * Obtenir le contenu d'un fichier cache.
+    * @param $filename Nom du fichier cache
+    **/
+    public function get($filename = null)
+    {
+        $filename = str_replace('/', DS, $filename);
 
-		if (!is_dir($this->path) || !is_writable($this->path))
-		{
-			$this->addError("Cache dir dosen't exist or unable to open it.");
-			return false;
-		}
+        if (!is_dir($this->path) || !is_writable($this->path))
+        {
+            $this->addError("Cache dir dosen't exist or unable to open it.");
+            return false;
+        }
 
-		$filepath = $this->path.DS.$filename.'.cache';
+        $filepath = $this->path.DS.$filename.'.cache';
 
-		if(!@file_exists($filepath))
-		{
-			$this->addError("Cache file dosen't exis.");
-			return false;
-		}
+        if(!@file_exists($filepath))
+        {
+            $this->addError("Cache file dosen't exis.");
+            return false;
+        }
 
-		if(!$fp = @fopen($filepath, "r"))
-		{
-			$this->addError("Unable to read cache file.");
-			return false;
-		}
+        if(!$fp = @fopen($filepath, "r"))
+        {
+            $this->addError("Unable to read cache file.");
+            return false;
+        }
 
-		flock($fp, LOCK_SH);
+        flock($fp, LOCK_SH);
 
-		if(filesize($filepath) > 0)
-		{
-			$contents = unserialize(fread($fp, filesize($filepath)));
-		}
-		else
-		{
-			$contents = null;
-		}
+        if(filesize($filepath) > 0)
+        {
+            $contents = unserialize(fread($fp, filesize($filepath)));
+        }
+        else
+        {
+            $contents = null;
+        }
 
-		flock($fp, LOCK_UN);
-		fclose($fp);
+        flock($fp, LOCK_UN);
+        fclose($fp);
 
-		if(!empty($contents['__cache_expires']) && $contents['__cache_expires'] < time())
-		{
-			$this->delete($filename);
-			$this->addError("Cache file expired.");
-			return false;
-		}
+        if(!empty($contents['__cache_expires']) && $contents['__cache_expires'] < time())
+        {
+            $this->delete($filename);
+            $this->addError("Cache file expired.");
+            return false;
+        }
 
-		return @$contents['__cache_contents'];
-	}
+        return @$contents['__cache_contents'];
+    }
 
-	/**
-	* Ecrire un fichier cache.
-	* @param $contents 	Contenue du cache
-	* @param $filename 	Nom du fichier cache
-	* @param $expires 	Date d'expiration du cache
-	**/
-	public function write($contents = null, $filename = null, $expires = null)
-	{
-		$contents = array('__cache_contents' => $contents);
-		$filename = str_replace('/', DS, $filename);
+    /**
+    * Ecrire un fichier cache.
+    * @param $contents     Contenue du cache
+    * @param $filename     Nom du fichier cache
+    * @param $expires     Date d'expiration du cache
+    **/
+    public function write($contents = null, $filename = null, $expires = null)
+    {
+        $contents = array('__cache_contents' => $contents);
+        $filename = str_replace('/', DS, $filename);
 
-		if (!is_dir($this->path) || !is_writable($this->path))
-		{
-			$this->addError("Cache dir dosen't exist or unable to write in.");
-			return false;
-		}
+        if (!is_dir($this->path) || !is_writable($this->path))
+        {
+            $this->addError("Cache dir dosen't exist or unable to write in.");
+            return false;
+        }
 
-		$subdirs = explode(DS, $filename);
+        $subdirs = explode(DS, $filename);
 
-		if(count($subdirs) > 1)
-		{
-			array_pop($subdirs);
+        if(count($subdirs) > 1)
+        {
+            array_pop($subdirs);
 
-			$test_path = $this->path.DS.implode(DS, $subdirs);
+            $test_path = $this->path.DS.implode(DS, $subdirs);
 
-			if(!@file_exists($test_path))
-			{
-				if(!mkdir($test_path, 0666, true))
-				{
-					$this->addError("Unable to create direcoty: ".$test_path);
-					return false;
-				}
-			}
-		}
+            if(!@file_exists($test_path))
+            {
+                if(!mkdir($test_path, 0666, true))
+                {
+                    $this->addError("Unable to create direcoty: ".$test_path);
+                    return false;
+                }
+            }
+        }
 
-		$cache_path = $this->path.DS.$filename.'.cache';
+        $cache_path = $this->path.DS.$filename.'.cache';
 
-		if(!$fp = @fopen($cache_path, "w"))
-		{
-			$this->addError("Unable to write Cache file: ".$cache_path);
-			return false;
-		}
+        if(!$fp = @fopen($cache_path, "w"))
+        {
+            $this->addError("Unable to write Cache file: ".$cache_path);
+            return false;
+        }
 
-		$contents['__cache_created'] = time();
+        $contents['__cache_created'] = time();
 
-		if(!empty($expires))
-		{
-			$contents['__cache_expires'] = $expires + time();
-		}
-		elseif(!empty($this->default_expire))
-		{
-			$this->_contents['__cache_expires'] =$this->default_expire + time();
-		}
+        if(!empty($expires))
+        {
+            $contents['__cache_expires'] = $expires + time();
+        }
+        elseif(!empty($this->default_expire))
+        {
+            $this->_contents['__cache_expires'] =$this->default_expire + time();
+        }
 
-		if(flock($fp, LOCK_EX))
-		{
-			fwrite($fp, serialize($contents));
-			flock($fp, LOCK_UN);
-		}
-		else
-		{
-			$this->addError("Cache was unable to secure a file lock for file at: ".$cache_path);
-			return false;
-		}
+        if(flock($fp, LOCK_EX))
+        {
+            fwrite($fp, serialize($contents));
+            flock($fp, LOCK_UN);
+        }
+        else
+        {
+            $this->addError("Cache was unable to secure a file lock for file at: ".$cache_path);
+            return false;
+        }
 
-		fclose($fp);
-		@chmod($cache_path, 0666);
+        fclose($fp);
+        @chmod($cache_path, 0666);
 
-		return true;
-	}
+        return true;
+    }
 
-	/**
-	* Supprime un fichier cache.
-	* @param $filename Nom du fichier cache
-	**/
-	public function delete($filename = null)
-	{
-		if($filename == null)
-		{
-			$this->addError("Cache file name is empty.");
-			return false;
-		}
+    /**
+    * Supprime un fichier cache.
+    * @param $filename Nom du fichier cache
+    **/
+    public function delete($filename = null)
+    {
+        if($filename == null)
+        {
+            $this->addError("Cache file name is empty.");
+            return false;
+        }
 
-		$filename = str_replace('/', DS, $filename);
-		$file_path = $this->path.DS.$filename.'.cache';
+        $filename = str_replace('/', DS, $filename);
+        $file_path = $this->path.DS.$filename.'.cache';
 
-		if(@file_exists($file_path)) unlink($file_path);
+        if(@file_exists($file_path)) unlink($file_path);
 
-		return true;
-	}
+        return true;
+    }
 
-	/**
-	* Renvoi les erreurs dans un tableau.
-	**/
-	public function errors()
-	{
-		return $this->errors;
-	}
+    /**
+    * Renvoi les erreurs dans un tableau.
+    **/
+    public function errors()
+    {
+        return $this->errors;
+    }
 
-	/**
-	* Ajout d'erreur dans le tableau d'erreurs.
-	* @param $error Erreur a ajouté (texte)
-	**/
-	private function addError($error)
-	{
-		array_push($this->errors, $error);
-	}
+    /**
+    * Ajout d'erreur dans le tableau d'erreurs.
+    * @param $error Erreur a ajouté (texte)
+    **/
+    private function addError($error)
+    {
+        array_push($this->errors, $error);
+    }
 }

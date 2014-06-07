@@ -2,23 +2,23 @@
 
 class Conf
 {
-	static $databases = array(
-		'default' => array(
-			'host'		=> '',
-			'login'		=> '',
-			'password'	=> '',
-			'database'	=> ''
-		)
-	);
+    static $databases = array(
+        'default' => array(
+            'host'        => '',
+            'login'        => '',
+            'password'    => '',
+            'database'    => ''
+        )
+    );
 
-	static $cache = array(
-		'path' 			  => 'cache',
-		'default_expires' => 0
-	);
+    static $cache = array(
+        'path'               => 'cache',
+        'default_expires' => 0
+    );
 
-	static $security = array(
-		'rc4' => "MODIFY_KEY_HERE"
-	);
+    static $security = array(
+        'rc4' => "MODIFY_KEY_HERE"
+    );
 }
 
 Router::connect('','shop/accueil');

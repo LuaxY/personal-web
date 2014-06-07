@@ -2,5 +2,5 @@
 
 class Product extends Model
 {
-	var $table = 'products'; 
+    var $table = 'products'; 
 }

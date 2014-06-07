@@ -14,7 +14,7 @@
     <div id="header-wrapper">
         <div id="header">
             <div>
-                <a class="logo" href="/"><img src="{{ asset('images/logo.png') }}" height="50" /></a>
+                <a class="logo" href="{{ url('') }}"><img src="{{ asset('images/logo.png') }}" height="50" /></a>
                 <ul class="nav">
                     <li><a href="http://yann.voidmx.net">Retour au site</a></li>
                 </ul>
@@ -55,7 +55,9 @@
                         <p>&copy; <span id="year">2014</span> <b>Yann Guineau</b> - yann.guineau@voidmx.net.</p>
                     </div>
                     <div class="code-by">
-                        <img alt="code-by" src="{{ asset('images/code-by.png') }}" height="15" />
+                        <a href="https://github.com/LuaxY/personal-web">
+                            <img alt="code-by" src="{{ asset('images/code-by.png') }}" height="15" />
+                        </a>
                     </div>
                 </div>
             </div>

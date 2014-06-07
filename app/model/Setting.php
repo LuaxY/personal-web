@@ -2,5 +2,5 @@
 
 class Setting extends Model
 {
-	var $table = 'settings'; 
+    var $table = 'settings'; 
 }
