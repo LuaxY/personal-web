@@ -4,8 +4,7 @@
     <title>Yann Guineau, Software developper</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}" type="text/css" />
-    <!--<link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />-->
-    <link rel="shortcut icon" type="image/png" href="{{ asset('images/public.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav.ico') }}" />
 </head>
 <body id="page-index">
     <div id="header-wrapper">
