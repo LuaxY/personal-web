@@ -10,7 +10,7 @@
             <h1>{{ p.title }}</h1>
             <br />
             {{ p.content|raw}}
-            <p><a href="{{ url('blog/' ~ p.slug) }}#disqus_thread">commentaire(s)</a></p>
+            <p><a href="{{ url('blog/post/' ~ p.slug) }}#disqus_thread">commentaire(s)</a></p>
         </div>
         {% endfor %}
     </div>
