@@ -375,6 +375,52 @@ div.product {
   overflow: hidden;
 }
 
+div.product div.left-col,
+div.cart {
+  width: 620px;
+}
+
+div.product span.size-link {
+  display: block;
+  border-top: 1px solid #CACACA;
+  margin-top: 20px;
+}
+
+div#page div.left-col {
+  width: 466px;
+  float: left;
+  position: relative;
+}
+
+div#page div.left-col p {
+  color: #666;
+  padding: 0 20px 0 0;
+}
+
+div#page div.left-col ol {
+  list-style-type: decimal;
+  padding-left: 18px;
+  color: #666;
+  font-weight: bold;
+}
+
+div#page div.right-col {
+  width: 466px;
+  min-height: 282px;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+div#page div.right-col.sizes {
+  background: transparent url(measure-diagram.jpg) center top no-repeat;
+  min-height: 500px;
+}
+
+div#page div.right-col.package {
+  background: transparent url(package.jpg) center top no-repeat;
+}
+
 div.item div.shell,
 div.product div.left-col div.shell,
 div.cart .shell {
