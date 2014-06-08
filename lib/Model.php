@@ -284,10 +284,10 @@ class Model
         }
     }
 
-    public function query($req)
+    public function query($req, $data = null)
     {
         $pre = $this->db->prepare($req);
-        $pre->execute();
+        $pre->execute($data);
         return $pre->fetchAll(PDO::FETCH_OBJ);
     }
 }
