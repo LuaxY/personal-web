@@ -1088,6 +1088,57 @@ div.alternative-payment-method input {
   margin: 10px 0;
 }
 
+div.content #picture {
+    padding: 5px 15px 15px 15px;
+}
+
+blockquote {
+    margin-left: 35px;
+}
+
+blockquote p:before {
+    color: #4488AA;
+    content: "“";
+    font-size: 5em;
+    line-height: 0;
+    margin: 0 5px 0 -35px;
+    vertical-align: bottom;
+}
+
+p.tag_cloud {
+    margin: 0 0 0.5em;
+    text-align: justify;
+    font-family: Verdana,Arial,sans-serif;
+    letter-spacing: 0;
+}
+
+p.tag_cloud span.s1 {
+    font-size: 10px;
+}
+
+p.tag_cloud span.s2 {
+    font-size: 12px;
+}
+
+p.tag_cloud span.s3 {
+    font-size: 14px;
+}
+
+p.tag_cloud span.s4 {
+    font-size: 16px;
+}
+
+p.tag_cloud span.s5 {
+    font-size: 18px;
+}
+
+p.tag_cloud span.s6 {
+    font-size: 20px;
+}
+
+p.tag_cloud span.s7 {
+    font-size: 22px;
+}
 
 /* end */
 
