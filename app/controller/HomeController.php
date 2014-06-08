@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 class HomeController extends Controller
 {
     function actionIndex()

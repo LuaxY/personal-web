@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 class BlogController extends Controller
 {
     function actionIndex()
