@@ -1097,7 +1097,7 @@ blockquote {
 }
 
 blockquote p:before {
-    color: #4488AA;
+    color: #4183C4;
     content: "“";
     font-size: 5em;
     line-height: 0;

@@ -21,7 +21,7 @@ class Conf
     );
 }
 
-Router::connect('','home/accueil');
+Router::connect('','home/index');
 
 /*
 Router::connect('page/:slug-:id','pages/view/id:([0-9]+)/slug:([a-z0-9\-]+)');

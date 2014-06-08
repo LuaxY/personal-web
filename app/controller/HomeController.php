@@ -3,11 +3,7 @@ class HomeController extends Controller
 {
     function actionIndex()
     {
-        $this->redirect('home/accueil');
-    }
-
-    function actionAccueil()
-    {
+        $this->request->action = "accueil";
         $this->render('home/accueil.php');
     }
 }
