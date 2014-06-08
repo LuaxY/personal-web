@@ -52,7 +52,7 @@
                             <li><a href="/pages/faq">FAQ</a></li>
                             <li><a href="http://yann.voidmx.net/">Site web</a></li>
                         </ul>
-                        <p>&copy; <span id="year">2014</span> <b>Yann Guineau</b> - yann.guineau@voidmx.net.</p>
+                        <p>&copy; <span id="year"><?php echo date('Y'); ?></span> <b>Yann Guineau</b> - yann.guineau@voidmx.net.</p>
                     </div>
                     <div class="code-by">
                         <a href="https://github.com/LuaxY/personal-web">
