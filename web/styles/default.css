@@ -104,6 +104,10 @@ p {
   text-decoration: none;
 }
 
+#header a:hover {
+  color: #70AAE2;
+}
+
 #header .found-me {
     width: 70px;
     height: 32px;

@@ -15,8 +15,8 @@
 
                 <ul class="nav">
                     <li><a href="{{ url('') }}">Accueil</a></li>
-                    <li><a href="{{ url('shop') }}">Blog</a></li>
-                    <li><a href="{{ url('blog') }}">Boutique</a></li>
+                    <li><a href="{{ url('blog') }}">Blog</a></li>
+                    <li><a href="{{ url('shop') }}">Boutique</a></li>
                 </ul>
 
                 <span class="found-me">
