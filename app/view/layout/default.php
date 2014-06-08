@@ -12,9 +12,17 @@
         <div id="header">
             <div>
                 <a class="logo" href="{{ url('') }}"><img src="{{ asset('images/logo.png') }}" height="50" /></a>
+
                 <ul class="nav">
-                    <li><a href="http://yann.voidmx.net">Retour au site</a></li>
+                    <li><a href="{{ url('') }}">Accueil</a></li>
+                    <li><a href="{{ url('shop') }}">Blog</a></li>
+                    <li><a href="{{ url('blog') }}">Boutique</a></li>
                 </ul>
+
+                <span class="found-me">
+                    <a href="https://twitter.com/LuaxY_" target="_blank"><img src="{{ asset('images/twi.png') }}" /></a>
+                    <a href="https://github.com/LuaxY" target="_blank"><img src="{{ asset('images/git.png') }}" /></a>
+                </span>
             </div>
         </div>
     </div>

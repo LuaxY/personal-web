@@ -104,6 +104,13 @@ p {
   text-decoration: none;
 }
 
+#header .found-me {
+    width: 70px;
+    height: 32px;
+    margin: 20px 15px 0 0;
+    float: right;
+}
+
 /* end */
 
 
