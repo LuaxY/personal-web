@@ -5,6 +5,7 @@
 <h1>Some stuff about me</h1>
 <br />
 <p>Hi ! I'm Yann, young student in industrial computer science and passionate programming for several years.</p>
+<br />
 <p>I'm software developper, specialized in embedded systems and backend soft like game server. I also performs reverse engineering to understand the software protection or some malwares.</p>
 <br />
 

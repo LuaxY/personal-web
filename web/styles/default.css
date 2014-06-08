@@ -38,7 +38,7 @@ a {
 a img { border: none; }
 
 p {
-  margin: .8em 0;
+  /*margin: .8em 0;*/
 }
 /* end */
 
@@ -1092,6 +1092,13 @@ div.content #picture {
     padding: 5px 15px 15px 15px;
 }
 
+div.content hr {
+    border: 0;
+    height: 1px;
+    background-color: #EEEEEE;
+    margin: 12px 0 5px 0;
+}
+
 blockquote {
     margin-left: 35px;
 }
@@ -1138,6 +1145,185 @@ p.tag_cloud span.s6 {
 
 p.tag_cloud span.s7 {
     font-size: 22px;
+}
+
+div#blog {
+  width: 100%;
+}
+
+div#blog div.left-col {
+  width: 750px;
+  float: left;
+  position: relative;
+}
+
+div#blog div.right-col {
+  width: 160px;
+  min-height: 282px;
+  margin-left: 10px;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+div#blog div.left-col div.post {
+    min-height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px 0 15px 0;
+    margin-bottom: 20px;
+    -moz-box-shadow: 0px 0px 15px 0px #c4c4c4;
+    -webkit-box-shadow: 0px 0px 15px 0px #c4c4c4;
+    -o-box-shadow: 0px 0px 15px 0px #c4c4c4;
+    box-shadow: 0px 0px 15px 0px #c4c4c4;
+}
+
+div.post h1 {
+    color: #404040;
+    font-weight: normal;
+    font-size: 18pt;
+    margin: 0 15px 15px 15px;
+}
+
+div.post h2 {
+    color: #4488AA;
+    font-size: 12pt;
+    margin: 0 15px 15px 15px;
+}
+
+div.post h3 {
+    color: #4488AA;
+    font-size: 11pt;
+    font-weight: normal;
+    margin: 0 15px 15px 15px;
+}
+
+div.post p {
+    font-size: 11pt;
+    color: #666;
+    padding: 0 15px 0 15px;
+    text-align: justify;
+}
+
+div.post a {
+    color: #4488AA;
+    text-decoration: none;
+}
+
+div.post a:hover {
+    color: #66a3c2;
+    text-decoration: underline;
+}
+
+div.post hr {
+    border: 0;
+    height: 1px;
+    background-color: #EEEEEE;
+    margin: 12px 0 5px 0;
+}
+
+div.post li {
+    list-style-position:inside;
+    list-style-type:none;
+    padding-left: 10px;
+    font-size: 11pt;
+    color: #666;
+    text-align: justify;
+}
+
+div.post span.li-second {
+    margin-left: 30px;
+    font-size: 9pt;
+}
+
+div.post a[href^="http"] {
+    background: none repeat scroll 0 0 #4488AA;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 0 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+div.post a[href^="http"]:hover {
+    background-color: #66a3c2;
+    border: 0 solid #66a3c2;
+    text-decoration: underline;
+}
+
+div.post .spoiler span {
+    font-size: 11pt;
+    color: #666;
+    margin: 0 0 5px 15px;
+}
+
+div.post .spoiler input[type=button] {
+    font-size: 0.8em;
+    padding: 0 5px 0 5px;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    color: #616161;
+    height: 24px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    cursor: pointer;
+}
+
+div.post .spoiler input[type=button]:hover {
+    background-color: #F8F8F8;
+    color: #4C4C4C;
+}
+
+div.post .spoiler .block {
+    display: none;
+}
+
+div.post .link .title {
+    color: #4488AA;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0 15px 0 15px;
+}
+
+div.post .link .url {
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 9px;
+    margin: 5px 15px 5px 15px;
+    font-size: 13px;
+}
+
+div.post .link .url a {
+    border: 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: #333333;
+    font-family: Monaco,Menlo,Consolas,'Courier New',monospace;
+    text-shadow: unset;
+}
+
+div.post .link .url a:hover {
+    text-decoration: underline;
+    color: #4a637e;
+}
+
+div#blog div.right-col div.menu {
+    min-height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -moz-box-shadow: 0px 0px 15px 0px #c4c4c4;
+    -webkit-box-shadow: 0px 0px 15px 0px #c4c4c4;
+    -o-box-shadow: 0px 0px 15px 0px #c4c4c4;
+    box-shadow: 0px 0px 15px 0px #c4c4c4;
+}
+
+div.menu h3 {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #404040;
+    font-weight: normal;
+    font-size: 14pt;
+    margin: 15px 15px 13px 15px;
 }
 
 /* end */
@@ -1288,4 +1474,9 @@ p.tag_cloud span.s7 {
 
 .hidden {
   display: none !important;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
 }
