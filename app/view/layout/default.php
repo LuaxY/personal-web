@@ -2,13 +2,10 @@
 <html>
 <head>
     <title>Yann Guineau, Software developper</title>
-    
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}" type="text/css" />
-    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" />
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!--<link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />-->
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/public.png') }}" />
 </head>
 <body id="page-index">
     <div id="header-wrapper">
@@ -63,7 +60,8 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ asset('scripts/shop.js') }}"></script>
 </body>
 </html>
