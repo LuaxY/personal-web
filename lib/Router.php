@@ -142,7 +142,7 @@ class Router
                 $url = str_replace($v, $k, $url);
             }
         }
-
+        
         return BASE_URL."/".$url;
     }
 
