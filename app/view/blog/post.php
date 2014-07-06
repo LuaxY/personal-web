@@ -1,4 +1,4 @@
-{% extends 'layout/default.php' %}
+{% extends 'layout/default-header.php' %}
 
 {% set background = 'bg_blog.png' %}
 {% set title_left = p.title %}

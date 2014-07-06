@@ -1,8 +1,14 @@
 {% extends 'layout/default.php' %}
 
-{% block content %}
-<h1>Page introuvable</h1>
-<div class="alert-message error">&nbsp;&nbsp;{{ message }}</div>
-<br />
-<i>&nbsp;&nbsp;Retournez sur la page d'accueil en cliquant ici : <a href="{{ url('') }}">accueil</a>.</i>
+{% block page %}
+<div id="container-404">
+    <div class="title-404">
+        <div class="label-404">404</div>
+        Page non trouvée
+    </div>
+    <div>
+        <a class="button-404" href="{{ url('') }}">ACCUEIL</a>
+        <a class="button-404" href="javascript:history.back()">RETOUR</a>
+    </div>
+</div>
 {% endblock %}

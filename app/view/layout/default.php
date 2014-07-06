@@ -32,19 +32,8 @@
         </div>
 
         <div id="page">
-            <div class="header-wrapper{% if header_size is defined %} header-{{ header_size }}{% endif %}"{% if background is defined %} style="background-image:url('{{ asset('images/back/' ~ background) }}')"{% endif %}>
-                <div class="container">
-                    {% if title_right is defined %}<h1 class="header-title pull-right">{{ title_right }}</h1>{% endif %}
-                    {% if title_left is defined %}<h1 class="header-title">{{ title_left }}</h1>{% endif %}
-                    {% if subtitle is defined %}<h1 class="header-subtitle">{{ subtitle|raw }}</h1>{% endif %}
-                </div>
-            </div>
-
-            <?php echo $this->Session->flash(); ?>
-            {% block content %}{% endblock %}
-
+            {% block page %}{% endblock %}
         </div>        
-
         <div id="footer-push"></div>
     </div>
 
@@ -87,7 +76,7 @@
             </dl>
             <div class="clearfix"></div>
             <hr class="divider" />
-            <p class="pull-right"><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by <a href="https://github.com/LuaxY" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> on <a href="http://steamdb.info/">SteamDB</a></p>
+            <p class="pull-right"><span class="octicon octicon-code"></span> avec <span class="octicon octicon-heart"></span> par <a href="https://github.com/LuaxY" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> sur <a href="http://steamdb.info/">SteamDB</a></p>
             <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> <?php echo date('Y'); ?></p>
         </div>
     </div>
