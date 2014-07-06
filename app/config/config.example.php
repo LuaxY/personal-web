@@ -19,6 +19,8 @@ class Conf
     static $security = array(
         'rc4' => "MODIFY_KEY_HERE"
     );
+
+    static $debug = 0;
 }
 
 Router::connect('','home/index');
