@@ -8,11 +8,10 @@
     <div class="post">
         <h2>A propos de moi</h2>
         <br />
-        <p>Je suis Yann (<b>Luax</b>) Guineau, un jeune passioné par l'informatique et la programmation indistriel depuis plusieurs années.</p>
 
-        <p>Je suis ce que l'on peu appler un <i>software developper</i>, spécialisé dans les systèmes embarqué et les programmation <i>backend</i> telle que des serveurs de jeu. Je pratique également du <i>reverse engineering</i> pour mieux comprendre le fonctionnement des protections et des logiciels malveillant.</p>
-
-        <p>Et pour terminé, durant mon temps libre je fait un peut d'administration réseau et du développement web.</p>
+        <p>Je suis Yann (<b>Luax</b>) Guineau, un jeune passionné par l'informatique et la programmation industrielle depuis plusieurs années.</p>
+        <p>Je suis un développeur logiciel, spécialisé dans les systèmes embarqués et les programmes <i>backend</i>, tels que des serveurs de jeu. Je pratique également du <i>reverse engineering</i> pour mieux comprendre le fonctionnement des protections et des logiciels malveillant.</p>
+        <p>Et pour terminer, durant mon temps libre je fais un peu d'administration réseau et du développement web. J'utilise couramment principaux système d'exploitation Linux, Windows et Mac.</p>
 
         <br />
 
@@ -20,7 +19,12 @@
             <p><i>"Software is like sex: it's better when it's free."<br />- Linus Torvalds</i></p>
         </blockquote>
 
-        <br />
+        <div align="center">
+            <a href="https://twitter.com/LuaxY_" target="_blank"><img src="{{ asset('images/soc-twi.png') }}"></a>
+            <a href="https://github.com/LuaxY" target="_blank"><img src="{{ asset('images/soc-git.png') }}"></a>
+            <a href="https://bitbucket.org/Catbug" target="_blank"><img src="{{ asset('images/soc-bit.png') }}"></a>
+            <a href="skype:yann.0x?add"><img src="{{ asset('images/soc-sky.png') }}"></a>
+        </div>
 
         <h2>Nuage de compétences</h2>
         <br />
