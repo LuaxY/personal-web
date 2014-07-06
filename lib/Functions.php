@@ -87,3 +87,11 @@ function shopState($state, $quantity, $n)
         return $message;
     }
 }
+
+function menuActive($current, $menu)
+{
+    if($current == $menu)
+        return ' class="active"';
+    else
+        return '';
+}

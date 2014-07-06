@@ -57,8 +57,8 @@ class Controller
             $this->error("La vue '{$this->view}' n'existe pas");
         }
 
-        $this->set('title', "WebSite");
         $this->set('session', $_SESSION);
+        $this->set('page', $this->request->controller);
 
         extract($this->vars);
     
@@ -87,6 +87,7 @@ class Controller
         $twig->addFunction(new Twig_SimpleFunction('bbcode', 'bbcode'));
         $twig->addFunction(new Twig_SimpleFunction('rankName', 'rankName'));
         $twig->addFunction(new Twig_SimpleFunction('shopState', 'shopState'));
+        $twig->addFunction(new Twig_SimpleFunction('menuActive', 'menuActive'));
         
         return $twig->render($this->view, $this->vars);
     }
