@@ -1,74 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Yann Guineau, Software developper</title>
+    <title>{% if title is defined %}{{ title }} - {% endif %}Luax, software developper</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="{{ asset('styles/default.css') }}" type="text/css" />
+    <!--<link rel="shortcut icon" type="image/png" href="images/favicon.png" />-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav.ico') }}" />
+    <link rel="stylesheet" href="{{ asset('styles/milk.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/default.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
 </head>
-<body id="page-index">
-    <div id="header-wrapper">
+<body>
+    <div id="wrapper">
         <div id="header">
-            <div>
-                <a class="logo" href="{{ url('') }}"><img src="{{ asset('images/logo.png') }}" height="50" /></a>
-
-                <ul class="nav">
-                    <li><a href="{{ url('') }}">Accueil</a></li>
-                    <li><a href="{{ url('blog') }}">Blog</a></li>
-                    <li><a href="{{ url('shop') }}">Boutique</a></li>
+            <div class="container menu-top">
+                <ul class="header-navbar">
+                    <li{{ menuActive(page, 'home')|raw }}><a href="{{ url('') }}">Luax</a></li>
+                    <li{{ menuActive(page, 'blog')|raw }}><a href="{{ url('blog') }}">Blog</a></li>
+                    <li{{ menuActive(page, 'programmation')|raw }}><a href="{{ url('') }}">Programmation</a></li>
+                    <li{{ menuActive(page, 'web')|raw }}><a href="{{ url('') }}">Web</a></li>
+                    <li{{ menuActive(page, 'rexe')|raw }}><a href="{{ url('') }}">Reverse Engineering</a></li>
+                    <li{{ menuActive(page, 'network')|raw }}><a href="{{ url('') }}">Réseaux</a></li>
+                    <li{{ menuActive(page, 'workshop')|raw }}><a href="{{ url('') }}">Workshop</a></li>
                 </ul>
 
-                <span class="found-me">
-                    <a href="https://twitter.com/LuaxY_" target="_blank"><img src="{{ asset('images/twi.png') }}" /></a>
-                    <a href="https://github.com/LuaxY" target="_blank"><img src="{{ asset('images/git.png') }}" /></a>
-                </span>
+                <form class="header-search pull-right" action="{{ url('') }}" method="GET">
+                    <input type="hidden" name="a" value="" />
+                    <input class="field" type="search" placeholder="Recherche..." maxlength="200" name="q" />
+                    <input class="button" type="submit" value="Rechercher" />
+                </form>
             </div>
         </div>
-    </div>
 
-    <div id="wrapper">
-        <div class="sub-head">
-            <div class="breadcrumbs">
-                <span><a href="<?php echo Router::url($this->request->controller); ?>"><?php echo $this->request->controller; ?></a></span> / <span><?php echo ucfirst($this->request->action); ?></span>
+        <div id="page">
+            <div class="header-wrapper"{% if background is defined %} style="background-image:url('{{ asset('images/back/' ~ background) }}')"{% endif %}>
+                <div class="container">
+                    {% if title_right is defined %}<h1 class="header-title pull-right">{{ title_right }}</h1>{% endif %}
+                    {% if title_left is defined %}<h1 class="header-title">{{ title_left }}</h1>{% endif %}
+                </div>
             </div>
-            <ul class="sub-nav">
-                <li class="btn about"><a href="/pages/about-us"><span>&nbsp;</span>A propos</a></li>
-                <li class="btn about"><a href="/pages/faq"><span>&nbsp;</span>FAQ</a></li>
-                <li class="cart"><span>3</span><a href="/cart" id="btn_cart">Voir le panier</a></li>
-            </ul>
-        </div>
-
-        <div class="content">
 
             <?php echo $this->Session->flash(); ?>
             {% block content %}{% endblock %}
 
-        </div><!-- .content -->
-    </div><!-- #wrapper -->
+        </div>        
 
-    <div id="footer-wrapper">
-        <div id="footer">
-            <div class="lower_footer">
-                <div class="footer_inner clearfix">
-                    <div id="legal">
-                        <ul id="legal_links">
-                            <li><a href="/pages/about-us">A propos</a></li>
-                            <li><a href="/pages/faq">FAQ</a></li>
-                            <li><a href="http://yann.voidmx.net/">Site web</a></li>
-                        </ul>
-                        <p>&copy; <span id="year"><?php echo date('Y'); ?></span> <b>Yann Guineau</b> - yann.guineau@voidmx.net.</p>
-                    </div>
-                    <div class="code-by">
-                        <a href="https://github.com/LuaxY/personal-web">
-                            <img alt="code-by" src="{{ asset('images/code-by.png') }}" height="15" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div id="footer-push"></div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <dl class="footer-nav">
+                <dt>Luax</dt>
+                <dd><a href="{{ url('') }}">A propos</a></dd>
+                <dd><a href="{{ url('') }}">Blog</a></dd>
+                <dd><a href="{{ url('') }}">FAQ</a></dd>
+                <dd><a href="{{ url('') }}">Curriculum Vitæ</a></dd>
+            </dl>
+            <dl class="footer-nav">
+                <dt>Retrouvez moi...</dt>
+                <dd><a href="https://twitter.com/LuaxY_" target="_blank">sur Twitter</a></dd>
+                <dd><a href="https://github.com/LuaxY" target="_blank">sur GitHub</a></dd>
+                <dd><a href="https://bitbucket.org/Catbug" target="_blank">sur BitBucket</a></dd>
+                <dd><a href="skype:yann.0x?add">sur Skype</a></dd>
+            </dl>
+            <dl class="footer-nav">
+                <dt>Pages</dt>
+                <dd><a href="{{ url('') }}">Programmation</a></dd>
+                <dd><a href="{{ url('') }}">Web</a></dd>
+                <dd><a href="{{ url('') }}">Reverse Engineering</a></dd>
+                <dd><a href="{{ url('') }}">Réseaux</a></dd>
+            </dl>
+            <dl class="footer-nav">
+                <dt>Workshop</dt>
+                <dd><a href="{{ url('') }}">Item</a></dd>
+                <dd><a href="{{ url('') }}">Item</a></dd>
+                <dd><a href="{{ url('') }}">Item</a></dd>
+                <dd><a href="{{ url('') }}">Item</a></dd>
+            </dl>
+            <dl class="footer-nav">
+                <dt>Autre</dt>
+                <dd><a href="{{ url('') }}">Mumble</a></dd>
+                <dd><a href="{{ url('') }}">Donation</a></dd>
+                <dd><a href="{{ url('') }}">Contact</a></dd>
+                <dd><a href="{{ url('') }}">Signaler un bug</a></dd>
+            </dl>
+            <div class="clearfix"></div>
+            <hr class="divider" />
+            <p class="pull-right"><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by <a href="https://github.com/LuaxY" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> on <a href="http://steamdb.info/">SteamDB</a></p>
+            <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> <?php echo date('Y'); ?></p>
         </div>
     </div>
-    
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="{{ asset('scripts/shop.js') }}"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/1.8/gist-embed.min.js"></script>
+    <script src="{{ asset('scripts/script.js') }}"></script>
 </body>
 </html>
