@@ -577,6 +577,16 @@ p.tag_cloud span.s7 {
     font-size: 22px;
 }
 
+.post-multiple {
+    margin-bottom: 85px;
+}
+
+.post-date {
+    margin-bottom: 10px;
+    display: block;
+    color: #9E9E9E;
+}
+
 .comments-header {
     min-width: 960px;
     background: none repeat scroll 0% 0% #F5F1EE;

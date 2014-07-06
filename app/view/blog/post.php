@@ -8,8 +8,10 @@
 
 {% block content %}
 <div class="container">
-    {{ p.content|raw}}
-    <br />
+    <div class="post">
+        {{ p.content|raw}}
+        <br />
+    </div>
 </div>
 
 <div class="comments-header">
