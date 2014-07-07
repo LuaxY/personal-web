@@ -8,8 +8,8 @@
     {% for p in posts %}
     <div class="post post-multiple">
         <h1><a href="{{ url('blog/post/' ~ p.slug) }}">{{ p.title }}</a></h1>
-        <span class="post-date">Par <a>Yann</a> le <?php echo strtolower(date('j F Y', strtotime("{{ p.date }}"))); ?></span>
-        {{ p.content|raw}}
+        <span class="post-date">Par <a>Yann</a> le {{ p.date|date("j F Y") }}</span>
+        {{ p.content|raw }}
         <hr />
     </div>
     {% endfor %}
