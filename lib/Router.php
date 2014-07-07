@@ -143,7 +143,7 @@ class Router
             }
         }
         
-        return BASE_URL."/".$url;
+        return str_replace("//", "/", BASE_URL."/".$url);
     }
 
     /**
