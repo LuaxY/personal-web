@@ -1,6 +1,6 @@
 {% extends 'layout/default-header.php' %}
 
-{% set background = 'bg_blog.png' %}
+{% if p.background != '' %}{% set background = p.background %}{% endif %}
 {% set title_left = p.title %}
 {% set subtitle = 'Par <a>Yann</a> le ' ~ p.date|date("j F Y") %}
 {% set title = p.title %}
