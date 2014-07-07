@@ -3,8 +3,7 @@
 <head>
     <title>{% if title is defined %}{{ title }} - {% endif %}Luax, software developper</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!--<link rel="shortcut icon" type="image/png" href="images/favicon.png" />-->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav.ico') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.gif') }}" />
     <link rel="stylesheet" href="{{ asset('styles/milk.min.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
