@@ -60,7 +60,7 @@
             <span class="s7">tcp/ip</span>
             <span class="s6">unix</span>
             <span class="s5">virtualization</span>
-            <span class="s4">weboscket</span>
+            <span class="s4">websocket</span>
             <span class="s4">win32</span>
             <span class="s4">xml</span>
         </p>
