@@ -6,12 +6,12 @@
 {% block content %}
 <div class="container">
     <div class="post">
-        <h2>A propos de moi</h2>
+        <h2>À propos de moi</h2>
         <br />
 
-        <p>Je suis Yann (<b>Luax</b>) Guineau, un jeune passionné par l'informatique et la programmation industrielle depuis plusieurs années.</p>
-        <p>Je suis un développeur logiciel, spécialisé dans les systèmes embarqués et les programmes <i>backend</i>, tels que des serveurs de jeu. Je pratique également du <i>reverse engineering</i> pour mieux comprendre le fonctionnement des protections et des logiciels malveillant.</p>
-        <p>Et pour terminer, durant mon temps libre je fais un peu d'administration réseau et du développement web. J'utilise couramment principaux système d'exploitation Linux, Windows et Mac.</p>
+        <p>Je suis Yann (<b>Luax</b>) Guineau, jeune passionné d'informatique et de programmation industrielle depuis plusieurs années.</p>
+        <p>Je suis développeur logiciels, spécialisé dans les systèmes embarqués et les programmes <i>backend</i>, tels que des serveurs de jeux. Je pratique également du <i>reverse engineering</i> pour mieux comprendre le fonctionnement des protections et des logiciels malveillants.</p>
+        <p>Et pour terminer, durant mon temps libre, je fais un peu d'administration réseaux et du développement web. J'utilise couramment les principaux systèmes d'exploitation Linux, Windows et Mac.</p>
 
         <br />
 
