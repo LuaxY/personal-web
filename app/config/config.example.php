@@ -21,6 +21,8 @@ class Conf
     );
 
     static $debug = 0;
+
+    static $title = "Website title";
 }
 
 Router::connect('','home/index');

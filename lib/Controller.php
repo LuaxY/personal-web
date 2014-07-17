@@ -61,6 +61,7 @@ class Controller
         $this->set('pagename', $this->request->controller);
         $this->set('template', $this->request->isAjax() ? 'ajax' : 'default');
         $this->set('url', Router::url());
+        $this->set('webtitle', Conf::$title);
 
         extract($this->vars);
     

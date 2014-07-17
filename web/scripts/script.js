@@ -34,8 +34,10 @@ function loadPage(url)
             $("#page").html(data.page);
             $("#extra").html(data.extra);
 
-            if(data.title != null)
-                document.title = data.title + " - Luax, software developper";
+            if(data.pagetitle != null)
+                document.title = data.pagetitle + " - " + data.webtitle;
+            else
+                document.title = data.webtitle;
 
             checkActiveMenu(data.pagename);
         },
