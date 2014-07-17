@@ -31,7 +31,7 @@
         </div>
 
         <div id="page">
-            {% block page %}{% endblock %}
+            {{ block('page') }}
         </div>        
         <div id="footer-push"></div>
     </div>

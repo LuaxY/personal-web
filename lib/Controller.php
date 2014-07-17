@@ -58,7 +58,8 @@ class Controller
         }
 
         $this->set('session', $_SESSION);
-        $this->set('page', $this->request->controller);
+        $this->set('page-name', $this->request->controller);
+        $this->set('template', $this->request->isAjax() ? 'ajax' : 'default');
 
         extract($this->vars);
     

@@ -1,4 +1,4 @@
-{% extends 'layout/default.php' %}
+{% extends 'layout/' ~ template ~ '.php' %}
 
 {% block page %}
 <div class="header-wrapper{% if header_size is defined %} header-{{ header_size }}{% endif %}"{% if background is defined %} style="background-image:url('{{ asset('images/back/' ~ background) }}')"{% endif %}>
@@ -9,5 +9,5 @@
     </div>
 </div>
 <?php echo $this->Session->flash(); ?>
-{% block content %}{% endblock %}
+{{ block('content') }}
 {% endblock %}
