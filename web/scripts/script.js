@@ -1,4 +1,4 @@
-$(".spoiler > span > input").click(function() {
+$(document).on('click', '.spoiler > span > input', function() {
     if($(this).val() == "Afficher") {
         $(this).val("Masquer");
         $(this).parent().parent().find(".block").show();
