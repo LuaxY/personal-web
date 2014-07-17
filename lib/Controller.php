@@ -58,7 +58,7 @@ class Controller
         }
 
         $this->set('session', $_SESSION);
-        $this->set('page-name', $this->request->controller);
+        $this->set('pagename', $this->request->controller);
         $this->set('template', $this->request->isAjax() ? 'ajax' : 'default');
 
         extract($this->vars);
@@ -86,9 +86,6 @@ class Controller
         $twig->addFunction(new Twig_SimpleFunction('request', 'Controller::request'));
         $twig->addFunction(new Twig_SimpleFunction('dump', 'var_dump'));
         $twig->addFunction(new Twig_SimpleFunction('bbcode', 'bbcode'));
-        $twig->addFunction(new Twig_SimpleFunction('rankName', 'rankName'));
-        $twig->addFunction(new Twig_SimpleFunction('shopState', 'shopState'));
-        $twig->addFunction(new Twig_SimpleFunction('menuActive', 'menuActive'));
         
         return $twig->render($this->view, $this->vars);
     }

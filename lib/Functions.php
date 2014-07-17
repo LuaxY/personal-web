@@ -7,28 +7,6 @@
  * file that was distributed with this source code.
  */
 
-function rankName($rank)
-{
-    switch($rank)
-    {
-        case 3:
-            $rankName = "Opérateur";
-            break;
-        case 2:
-            $rankName = "Administrateur";
-            break;
-        case 1:
-            $rankName = "Technicien";
-            break;
-        case 0:
-        default:
-            $rankName = "Utilisateur";
-            break;
-    }
-
-    return $rankName;
-}
-
 function bbcode($text)
 {
     $text = Security::AntiXSS($text);
@@ -54,44 +32,4 @@ function bbcode($text)
     $text = str_replace("[hr]", "<hr />", $text);
 
     echo nl2br($text);
-}
-
-function shopState($state, $quantity, $n)
-{
-    if($n == 0)
-    {
-        if($state == 0)
-            return "unavailable";
-
-        if($quantity == -1 || $quantity > 0)
-            return "in-stock";
-
-        return "sold-out";
-    }
-    else
-    {
-        if($state == 0)
-            return "Article indisponible";
-        
-        if($quantity == 0)
-            return "Rupture de stock";
-
-        if($state == 1)
-            $message = "Article en préachat";
-        else
-            $message = "Article disponible";
-
-        if($quantity > 0)
-            $message .= ", il en reste " . $quantity;
-
-        return $message;
-    }
-}
-
-function menuActive($current, $menu)
-{
-    if($current == $menu)
-        return ' class="active"';
-    else
-        return '';
 }

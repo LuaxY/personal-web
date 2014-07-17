@@ -28,6 +28,7 @@ $(document).on('click', 'a', function() {
                 document.title = data.title + " - Luax, software developper";
 
             window.history.pushState({path:page}, '', page);
+            checkActiveMenu(data.pagename);
         },
         /*error: function(result, status, error) {
 
@@ -36,3 +37,9 @@ $(document).on('click', 'a', function() {
 
     return false;
 });
+
+function checkActiveMenu(current) {
+    $(".header-navbar").find(".active").removeClass("active");
+    var active = $(".header-navbar").find("a[name='" + current + "']");
+    active.parent().addClass("active");
+}

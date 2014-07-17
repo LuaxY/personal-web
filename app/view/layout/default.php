@@ -13,13 +13,13 @@
         <div id="header">
             <div class="container menu-top">
                 <ul class="header-navbar">
-                    <li{{ menuActive(page, 'home')|raw }}><a href="{{ url('') }}">Luax</a></li>
-                    <li{{ menuActive(page, 'blog')|raw }}><a href="{{ url('blog') }}">Blog</a></li>
-                    <li{{ menuActive(page, 'programmation')|raw }}><a href="{{ url('') }}">Programmation</a></li>
-                    <li{{ menuActive(page, 'web')|raw }}><a href="{{ url('') }}">Web</a></li>
-                    <li{{ menuActive(page, 'rexe')|raw }}><a href="{{ url('') }}">Reverse Engineering</a></li>
-                    <li{{ menuActive(page, 'network')|raw }}><a href="{{ url('') }}">Réseaux</a></li>
-                    <li{{ menuActive(page, 'workshop')|raw }}><a href="{{ url('') }}">Workshop</a></li>
+                    <li><a href="{{ url('') }}" name="home">Luax</a></li>
+                    <li><a href="{{ url('blog') }}" name="blog">Blog</a></li>
+                    <li><a href="{{ url('') }}" name="programmation">Programmation</a></li>
+                    <li><a href="{{ url('') }}" name="web">Web</a></li>
+                    <li><a href="{{ url('') }}" name="rexe">Reverse Engineering</a></li>
+                    <li><a href="{{ url('') }}" name="network">Réseaux</a></li>
+                    <li><a href="{{ url('') }}" name="workshop">Workshop</a></li>
                 </ul>
 
                 <form class="header-search pull-right" action="{{ url('') }}" method="GET">
@@ -83,5 +83,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/1.8/gist-embed.min.js"></script>
     <script src="{{ asset('scripts/script.js') }}"></script>
+    <script>checkActiveMenu('{{ pagename }}');</script>
 </body>
 </html>
