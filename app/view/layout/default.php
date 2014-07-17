@@ -32,7 +32,8 @@
 
         <div id="page">
             {{ block('page') }}
-        </div>        
+        </div>
+        <div id="extra" style="display:none"></div>
         <div id="footer-push"></div>
     </div>
 

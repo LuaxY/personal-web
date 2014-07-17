@@ -14,6 +14,7 @@ class BlogController extends Controller
         }
 
         $d['posts'] = $cache;
+        $d['extra'] = '<script type="text/javascript">$("[data-gist-id]").gist();</script>';
 
         $this->set($d);
         $this->render('blog/accueil.php');
@@ -38,6 +39,7 @@ class BlogController extends Controller
         }
 
         $d['p'] = $cache;
+        $d['extra'] = '<script type="text/javascript">$("[data-gist-id]").gist();</script>';
 
         $this->set($d);
         $this->render('blog/post.php');

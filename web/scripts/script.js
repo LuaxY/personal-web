@@ -21,8 +21,8 @@ $(document).on('click', 'a', function() {
         type: 'GET',
         dataType: 'json',
         success: function(data) {
-            $("#page").html('');
             $("#page").html(data.page);
+            $("#extra").html(data.extra);
 
             if(data.title != null)
                 document.title = data.title + " - Luax, software developper";
