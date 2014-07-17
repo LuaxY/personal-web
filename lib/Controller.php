@@ -60,6 +60,7 @@ class Controller
         $this->set('session', $_SESSION);
         $this->set('pagename', $this->request->controller);
         $this->set('template', $this->request->isAjax() ? 'ajax' : 'default');
+        $this->set('url', Router::url());
 
         extract($this->vars);
     

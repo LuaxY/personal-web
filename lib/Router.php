@@ -118,7 +118,7 @@ class Router
     {
         if(is_null($url))
         {
-            $url = substr($_SERVER['PATH_INFO'], 1);
+            $url = substr(isset($_SERVER['PATH_INFO'])?$_SERVER['PATH_INFO']:'/', 1);
         }
 
         trim($url, '/');

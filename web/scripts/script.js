@@ -12,12 +12,22 @@ $(document).on('click', 'a', function() {
     if($(this).attr('href')[0] != '/')
         return true;
 
-    var page = $(this).attr('href');
+    var url = $(this).attr('href');
+    window.history.pushState({path: url}, '', url);
+    loadPage(url);
+    return false;
+});
 
+$(window).bind('popstate', function(event) {
+    loadPage(location.pathname);
+});
+
+function loadPage(url)
+{
     $("#page").html('<div align="center" style="margin-top:100px"><img src="/images/loader.gif" /><br /><br />Chargement en cours...</div>');
 
     $.ajax({
-        url: page,
+        url: url,
         type: 'GET',
         dataType: 'json',
         success: function(data) {
@@ -27,16 +37,13 @@ $(document).on('click', 'a', function() {
             if(data.title != null)
                 document.title = data.title + " - Luax, software developper";
 
-            window.history.pushState({path:page}, '', page);
             checkActiveMenu(data.pagename);
         },
         /*error: function(result, status, error) {
 
         }*/
     });
-
-    return false;
-});
+}
 
 function checkActiveMenu(current) {
     $(".header-navbar").find(".active").removeClass("active");
