@@ -80,7 +80,6 @@ class Controller
     private function twigMyRender()
     {
         $loader = new Twig_Loader_Filesystem(APP.DS.'view');
-        //$twig = new Twig_Environment($loader, array('cache' => APP.DS.'cache',)); // Système de cache pas top
         $twig = new Twig_Environment($loader);
 
         $twig->addFunction(new Twig_SimpleFunction('url', 'Router::url'));
@@ -88,6 +87,7 @@ class Controller
         $twig->addFunction(new Twig_SimpleFunction('request', 'Controller::request'));
         $twig->addFunction(new Twig_SimpleFunction('dump', 'var_dump'));
         $twig->addFunction(new Twig_SimpleFunction('bbcode', 'bbcode'));
+        $twig->addFunction(new Twig_SimpleFunction('markdown', 'markdown'));
         
         return $twig->render($this->view, $this->vars);
     }

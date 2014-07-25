@@ -19,6 +19,7 @@ require 'Cache.php';
 require 'Controller.php';
 require 'Model.php';
 require 'Dispatcher.php';
+require 'Parsedown.php';
 
 require 'Twig/Autoloader.php';
 Twig_Autoloader::register();

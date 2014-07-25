@@ -33,3 +33,9 @@ function bbcode($text)
 
     echo nl2br($text);
 }
+
+function markdown($text)
+{
+    $Parsedown = new Parsedown();
+    echo $Parsedown->text($text);
+}

@@ -9,7 +9,7 @@
 {% block content %}
 <div class="container">
     <div class="post">
-        {{ p.content|raw}}
+        {{ markdown(p.content) }}
         <br />
     </div>
 </div>
