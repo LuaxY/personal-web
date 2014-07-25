@@ -2,3 +2,4 @@ app/config/config.php
 app/cache/*/*.cache
 lib/Twig/*
 lib/Parsedown.php
+*.psd
