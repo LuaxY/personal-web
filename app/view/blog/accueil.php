@@ -9,7 +9,7 @@
     <div class="post post-multiple">
         <h1><a href="{{ url('blog/post/' ~ p.slug) }}">{{ p.title }}</a></h1>
         <span class="post-date">Par <a>Yann</a> le {{ p.date|date("j F Y") }}</span>
-        {{ p.content|raw }}
+        {{ markdown(p.content) }}
         <hr />
     </div>
     {% endfor %}
