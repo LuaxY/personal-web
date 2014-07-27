@@ -33,7 +33,7 @@ class BlogController extends Controller
             $cache = current($this->Post->query("SELECT * FROM posts as p, categories AS c WHERE p.categorie = c.id AND p.slug = :slug", array(":slug" => $slug)));
             
             if(!$cache)
-                $this->redirect('blog');
+                $this->redirect('blog/notfound');
 
             $this->Cache->write($cache, 'blog/'.$slug, 60);
         }
@@ -43,5 +43,10 @@ class BlogController extends Controller
 
         $this->set($d);
         $this->render('blog/post.php');
+    }
+
+    function actionNotfound()
+    {
+        $this->render('blog/no-post.php');
     }
 }
