@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="{{ asset('styles/milk.min.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div id="wrapper">
