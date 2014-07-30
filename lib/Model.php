@@ -147,6 +147,7 @@ class Model
         if(isset($req['conditions']))
         {
             $sql .= 'WHERE ';
+
             if(!is_array($req['conditions']))
             {
                 $sql .= $req['conditions'];
@@ -155,20 +156,14 @@ class Model
             {
                 $cond = array();
 
-                foreach($req['conditions'] as $k=>$v)
+                foreach($req['conditions'] as $k => $v)
                 {
-                    if(!is_numeric($v))
-                    {
-                        /*$v = '"'.mysql_real_escape_string($v).'"';*/
-                        $v = '"'.$v.'"';
-                    }
-                    
-                    $cond[] = "$k=$v";
+                    $k = ltrim($k, ':');
+                    $cond[] = "$k=:$k";
                 }
 
-                $sql .= implode(' AND ',$cond);
+                $sql .= implode(' AND ', $cond);
             }
-
         }
 
         if(isset($req['order']))
@@ -176,14 +171,22 @@ class Model
             $sql .= ' ORDER BY '.$req['order'];
         }
 
-
         if(isset($req['limit']))
         {
             $sql .= ' LIMIT '.$req['limit'];
         }
 
         $pre = $this->db->prepare($sql);
-        $pre->execute();
+
+        if(isset($req['conditions']) && is_array($req['conditions']))
+        {
+            $pre->execute($req['conditions']);
+        }
+        else
+        {
+            $pre->execute();
+        }
+
         return $pre->fetchAll(PDO::FETCH_OBJ);
     }
 
