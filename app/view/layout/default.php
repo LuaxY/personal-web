@@ -51,7 +51,7 @@
             <div class="clearfix"></div>
             <hr class="divider" />
             <p class="pull-right"><span class="octicon octicon-code"></span> avec <span class="octicon octicon-heart"></span> par <a href="https://github.com/LuaxY/personal-web" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> sur <a href="http://steamdb.info/">SteamDB</a></p>
-            <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> <?php echo date('Y'); ?>, dernière mise à jour le {{ last_update|date('j F Y à H:i') }}</p>
+            <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> {{ "now"|date('Y') }}, dernière mise à jour le {{ date_fr(last_update, 'j F Y à H:i') }}</p>
         </div>
     </div>
 

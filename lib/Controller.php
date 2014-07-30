@@ -95,6 +95,7 @@ class Controller
         $twig->addFunction(new Twig_SimpleFunction('dump', 'var_dump'));
         $twig->addFunction(new Twig_SimpleFunction('bbcode', 'bbcode'));
         $twig->addFunction(new Twig_SimpleFunction('markdown', 'markdown'));
+        $twig->addFunction(new Twig_SimpleFunction('date_fr', 'date_fr'));
         
         return $twig->render($this->view, $this->vars);
     }

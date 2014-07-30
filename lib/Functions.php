@@ -57,3 +57,12 @@ function get_data($url)
 
     return $data;
 }
+
+function date_fr($date, $format)
+{
+    $date = date($format, strtotime($date));
+    $english = array("January", "February", "March", "April", "May", "June", "July",    "August", "September", "October", "November", "December");
+    $french  = array("Janvier", "Février",  "Mars",  "Avril", "Mai", "Juin", "Juillet", "Août",   "Septembre", "Ocobre",  "Novembre", "Décembre");
+
+    return str_replace($english, $french, $date);
+}
