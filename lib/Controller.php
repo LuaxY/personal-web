@@ -57,11 +57,18 @@ class Controller
             $this->error("La vue '{$this->view}' n'existe pas");
         }
 
+        if(!($cache = $this->Cache->get('git')))
+        {
+            $cache = json_decode(get_data("https://api.github.com/repos/LuaxY/personal-web"));
+            $this->Cache->write($cache, 'git', 60);
+        }
+
         $this->set('session', $_SESSION);
         $this->set('pagename', $this->request->controller);
         $this->set('template', $this->request->isAjax() ? 'ajax' : 'default');
         $this->set('url', Router::url());
         $this->set('webtitle', Conf::$title);
+        $this->set('last_update', $cache->pushed_at);
 
         extract($this->vars);
     
