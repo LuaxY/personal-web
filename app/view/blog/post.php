@@ -2,7 +2,7 @@
 
 {% if p.background != '' %}{% set background = p.background %}{% endif %}
 {% set title_left = p.title %}
-{% set subtitle = 'Par <a>Yann</a> le ' ~ p.date|date("j F Y") %}
+{% set subtitle = 'Par <a>Yann</a> le ' ~ date_fr(p.date, 'j F Y') %}
 {% set title = p.title %}
 {% set header_size = 'medium' %}
 

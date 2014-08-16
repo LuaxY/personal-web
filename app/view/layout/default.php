@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-
 </head>
 <body>
     <div id="wrapper">
@@ -17,18 +16,13 @@
                 <ul class="header-navbar">
                     <li><a href="{{ url('') }}" name="home">Luax</a></li>
                     <li><a href="{{ url('blog') }}" name="blog">Blog</a></li>
-                    <li><a href="{{ url('') }}" name="programmation">Programmation</a></li>
-                    <li><a href="{{ url('') }}" name="web">Web</a></li>
-                    <li><a href="{{ url('') }}" name="rexe">Reverse Engineering</a></li>
-                    <li><a href="{{ url('') }}" name="network">Réseaux</a></li>
-                    <li><a href="{{ url('') }}" name="workshop">Workshop</a></li>
                 </ul>
 
-                <form class="header-search pull-right" action="{{ url('') }}" method="GET">
+                <!--<form class="header-search pull-right" action="{{ url('') }}" method="GET">
                     <input type="hidden" name="a" value="" />
                     <input class="field" type="search" placeholder="Recherche..." maxlength="200" name="q" />
                     <input class="button" type="submit" value="Rechercher" />
-                </form>
+                </form>-->
             </div>
         </div>
 
@@ -44,9 +38,8 @@
             <dl class="footer-nav">
                 <dt>Luax</dt>
                 <dd><a href="{{ url('') }}">A propos</a></dd>
-                <dd><a href="{{ url('') }}">Blog</a></dd>
-                <dd><a href="{{ url('') }}">FAQ</a></dd>
-                <dd><a href="{{ url('') }}">Curriculum Vitæ</a></dd>
+                <dd><a href="{{ url('blog') }}">Blog</a></dd>
+                <dd><a href="mailto:yann.guineau@voidmx.net">Contact</a></dd>
             </dl>
             <dl class="footer-nav">
                 <dt>Retrouvez moi...</dt>
@@ -55,31 +48,10 @@
                 <dd><a href="https://bitbucket.org/Catbug" target="_blank">sur BitBucket</a></dd>
                 <dd><a href="skype:yann.0x?add">sur Skype</a></dd>
             </dl>
-            <dl class="footer-nav">
-                <dt>Pages</dt>
-                <dd><a href="{{ url('') }}">Programmation</a></dd>
-                <dd><a href="{{ url('') }}">Web</a></dd>
-                <dd><a href="{{ url('') }}">Reverse Engineering</a></dd>
-                <dd><a href="{{ url('') }}">Réseaux</a></dd>
-            </dl>
-            <dl class="footer-nav">
-                <dt>Workshop</dt>
-                <dd><a href="{{ url('') }}">Item</a></dd>
-                <dd><a href="{{ url('') }}">Item</a></dd>
-                <dd><a href="{{ url('') }}">Item</a></dd>
-                <dd><a href="{{ url('') }}">Item</a></dd>
-            </dl>
-            <dl class="footer-nav">
-                <dt>Autre</dt>
-                <dd><a href="{{ url('') }}">Mumble</a></dd>
-                <dd><a href="{{ url('') }}">Donation</a></dd>
-                <dd><a href="{{ url('') }}">Contact</a></dd>
-                <dd><a href="{{ url('') }}">Signaler un bug</a></dd>
-            </dl>
             <div class="clearfix"></div>
             <hr class="divider" />
-            <p class="pull-right"><span class="octicon octicon-code"></span> avec <span class="octicon octicon-heart"></span> par <a href="https://github.com/LuaxY" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> sur <a href="http://steamdb.info/">SteamDB</a></p>
-            <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> <?php echo date('Y'); ?></p>
+            <p class="pull-right"><span class="octicon octicon-code"></span> avec <span class="octicon octicon-heart"></span> par <a href="https://github.com/LuaxY/personal-web" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> sur <a href="http://steamdb.info/">SteamDB</a></p>
+            <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> {{ "now"|date('Y') }}, dernière mise à jour le {{ date_fr(last_update, 'j F Y à H:i') }}</p>
         </div>
     </div>
 

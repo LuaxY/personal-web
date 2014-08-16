@@ -39,3 +39,30 @@ function markdown($text)
     $Parsedown = new Parsedown();
     echo $Parsedown->text($text);
 }
+
+function get_data($url)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER,false);
+    curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+
+    $data = curl_exec($ch);
+    curl_close($ch);
+
+    return $data;
+}
+
+function date_fr($date, $format)
+{
+    $date = date($format, strtotime($date));
+    $english = array("January", "February", "March", "April", "May", "June", "July",    "August", "September", "October", "November", "December");
+    $french  = array("Janvier", "Février",  "Mars",  "Avril", "Mai", "Juin", "Juillet", "Août",   "Septembre", "Ocobre",  "Novembre", "Décembre");
+
+    return str_replace($english, $french, $date);
+}
