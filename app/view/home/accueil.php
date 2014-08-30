@@ -22,7 +22,8 @@
         <div align="center">
             <a href="https://twitter.com/LuaxY_" target="_blank"><img src="{{ asset('images/soc-twi.png') }}"></a>
             <a href="https://github.com/LuaxY" target="_blank"><img src="{{ asset('images/soc-git.png') }}"></a>
-            <a href="http://dev.voidmx.net" target="_blank"><img src="{{ asset('images/soc-gitlab.png') }}"></a>
+            <a href="https://bitbucket.org/LuaxY" target="_blank"><img src="{{ asset('images/soc-bit.png') }}"></a>
+            <!--<a href="http://dev.voidmx.net" target="_blank"><img src="{{ asset('images/soc-gitlab.png') }}"></a>-->
             <a href="skype:yann.0x?add"><img src="{{ asset('images/soc-sky.png') }}"></a>
         </div>
 
