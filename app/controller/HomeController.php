@@ -4,8 +4,6 @@ class HomeController extends Controller
 {
     function actionIndex()
     {
-        $this->request->action = "accueil";
-
         $d['cloud'] = array(
             "apache"         => 4, "assembler"  => 3, "boost"               => 4,
             "C/C++"          => 7, "cisco"      => 6, "css3"                => 4,
