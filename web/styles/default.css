@@ -20,6 +20,27 @@ body {
     overflow-y: scroll;
 }
 
+/*.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}*/
+
 /*** CONTAINER ***/
 
 #wrapper {
@@ -755,6 +776,91 @@ p.tag_cloud span.s7 {
 
 .button-404:first-child {
     margin-right: 20px;
+}
+
+/*** CV ***/
+
+.cv {
+    margin-bottom: 10px;
+}
+
+.cv h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cv-left {
+    width: 670px;
+    float: left;
+}
+
+.cv .cv-left i,
+.cv h2 i {
+    color: #7F8C8D;
+    text-shadow: 0px 0px 0px;
+}
+
+.cv-container:after {
+    content: " ";
+    display: block;
+    clear: both; 
+}
+
+.cv-date {
+    width: 110px;
+    float: left;
+    padding: 5px;
+    color: #7F8C8D;
+}
+
+.cv-date i {
+    margin-right: 5px;
+}
+
+.cv-detail {
+    width: 480px;
+    float: left;
+    padding: 0 20px 0 20px;
+    border-left: 1px dashed #7F8C8D;
+}
+
+.cv-detail p {
+    word-wrap: break-word;
+}
+
+.cv-right {
+    width: 260px;
+    float: right;
+}
+
+.cv-line {
+    height: 20px;
+}
+
+.cv-line:after {
+    clear: both;
+}
+
+.cv-container {
+    height: auto;
+}
+
+.cv-line:last-child {
+    margin-bottom: 20px;
+}
+
+.cv-line .columns {
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+.cv-line .columns:last-child {
+    float: right;
+}
+
+.cv-line.sub {
+    margin-left: 20px;
 }
 
 /*** FOOTER ***/
