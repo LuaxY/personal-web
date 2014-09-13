@@ -21,6 +21,13 @@ class HomeController extends Controller
             "xml"            => 4, "KVM"        => 2, "actionscript3"       => 4,
             "OpenVPN"        => 3);
 
+        $colors = json_decode(file_get_contents(APP.DS.'config'.DS.'gradients.json'));
+        $color_id = rand(0, count($colors) - 1);
+
+        $d['color1'] = $colors[$color_id]->colour1;
+        $d['color2'] = $colors[$color_id]->colour2;
+        $d['title_right'] = $colors[$color_id]->name;
+
         $this->set($d);
         $this->render('home/accueil.php');
     }

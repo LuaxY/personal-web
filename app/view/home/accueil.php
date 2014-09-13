@@ -1,6 +1,6 @@
 {% extends 'layout/default-header.php' %}
 
-{% set background = 'bg_fade.png' %}
+{% set background = 'bg_mask.png' %}
 {% set title_left = 'Bienvenue visiteur !' %}
 
 {% block content %}
@@ -37,4 +37,16 @@
         <br />
     </div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".dynamic-color").css({
+        "background-color": "{{ color1 }}",
+        "background": "-webkit-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "   -moz-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "    -ms-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "     -o-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "        linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)"
+    });
+});
+</script>
 {% endblock %}

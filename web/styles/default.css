@@ -178,10 +178,19 @@ span.li-second {
 .header-wrapper {
     height: 70px;
     min-width: 960px;
-    background-color: #000000;
+    /*background-color: #000000;*/
     margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center top;
+}
+
+.black-container {
+    background-color: #000000;
+}
+
+.dynamic-color {
+    width: 1150px;
+    margin: 0 auto;
 }
 
 .header-wrapper .header-title {
