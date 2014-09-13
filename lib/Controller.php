@@ -60,7 +60,7 @@ class Controller
         if(!($cache = $this->Cache->get('git')))
         {
             $cache = json_decode(get_data("https://api.github.com/repos/LuaxY/personal-web"));
-            $this->Cache->write($cache, 'git', 60);
+            $this->Cache->write($cache, 'git', 1200);
         }
 
         $this->set('session', $_SESSION);
