@@ -4,15 +4,15 @@ class Conf
 {
     static $databases = array(
         'default' => array(
-            'host'        => '',
-            'login'        => '',
-            'password'    => '',
-            'database'    => ''
+            'host'     => '',
+            'login'    => '',
+            'password' => '',
+            'database' => ''
         )
     );
 
     static $cache = array(
-        'path'               => 'cache',
+        'path'            => 'cache',
         'default_expires' => 0
     );
 
@@ -23,6 +23,11 @@ class Conf
     static $debug = 0;
 
     static $title = "Website title";
+
+    static $piwik = array(
+        'url' => 'voidmx.net/piwik_wtf/',
+        'id'  => '2'
+    );
 }
 
 Router::connect('','home/index');

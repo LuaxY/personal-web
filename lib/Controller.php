@@ -69,6 +69,7 @@ class Controller
         $this->set('url', Router::url());
         $this->set('webtitle', Conf::$title);
         $this->set('last_update', $cache->pushed_at);
+        $this->set('piwik', Conf::$piwik);
 
         extract($this->vars);
     

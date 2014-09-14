@@ -59,5 +59,19 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/1.8/gist-embed.min.js"></script>
     <script src="{{ asset('scripts/script.js') }}"></script>
     <script>checkActiveMenu('{{ pagename }}');</script>
+
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://{{ piwik.url }}";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', {{ piwik.id }}]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="http://{{ piwik.url }}piwik.php?idsite={{ piwik.id }}" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
