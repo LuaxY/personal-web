@@ -178,6 +178,16 @@
             <div class="columns">&nbsp;</div>
         </div>
         <div class="cv-line sub">
+            <div class="columns">Lua</div>
+            <div class="columns">
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
+            </div>
+        </div>
+        <div class="cv-line sub">
             <div class="columns">Python</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
