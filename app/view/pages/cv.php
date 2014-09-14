@@ -45,6 +45,8 @@
             </div>
         </div>
 
+        <br />
+
         <h2><i class="fa fa-graduation-cap"></i> Diplômes &amp; Etudes</h2>
 
         <div class="cv-container">
@@ -67,7 +69,7 @@
             </div>
             <div class="cv-detail">
                 <h4>
-                    BTS IRIS Programmation Industriel
+                    BTS IRIS Programmation Industrielle
                     <br />
                     <small><i class="fa fa-map-marker"></i> Lycée Vauvenargues, Aix en Provence, France</small>
                 </h4>
@@ -88,6 +90,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
             </div>
         </div>
+
+        <br />
 
         <h2><i class="fa fa-star-o"></i> Certifications</h2>
 
@@ -240,6 +244,8 @@
             </div>
         </div>
 
+        <br />
+
         <h3><i class="fa fa-database"></i> SysAdmin</h3>
         <div class="cv-line">
             <div class="columns">Systèmes</div>
@@ -338,6 +344,8 @@
             </div>
         </div>
 
+        <br />
+
         <h3><i class="fa fa-html5"></i> Web</h3>
         <div class="cv-line">
             <div class="columns">HTML</div>
@@ -400,10 +408,12 @@
             </div>
         </div>
 
+        <br />
+
         <h3><i class="fa fa-language"></i> Langues</h3>
         <div class="cv-line">
             <div class="columns">Français</div>
-            <div class="columns">Langue maternelle</div>
+            <div class="columns">Courant</div>
         </div>
         <div class="cv-line">
             <div class="columns">Anglais</div>
