@@ -813,6 +813,10 @@ p.tag_cloud span.s7 {
     color: #7F8C8D;
 }
 
+.cv-date.big {
+    margin-top: 6px;
+}
+
 .cv-date i {
     margin-right: 5px;
 }
@@ -826,6 +830,14 @@ p.tag_cloud span.s7 {
 
 .cv-detail p {
     word-wrap: break-word;
+}
+
+.cv-detail ul {
+    margin-left: 13px;
+}
+
+.cv-detail li {
+    margin-bottom: 5px;
 }
 
 .cv-right {

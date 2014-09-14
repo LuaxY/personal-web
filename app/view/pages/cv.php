@@ -11,7 +11,7 @@
         <h2><i class="fa fa-flask"></i> Expériences Professionnelles</h2>
 
         <div class="cv-container">
-            <div class="cv-date">
+            <div class="cv-date big">
                 <i class="fa fa-calendar"></i><br />
                 Septembre 2014<br />
                 Maintenant
@@ -22,12 +22,12 @@
                     <br />
                     <small><i class="fa fa-map-marker"></i> BULL Amesys RSS à Airbus Helicopters, Marignane, France</small>
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
+                <p>Prochainement</p>
             </div>
         </div>
 
         <div class="cv-container">
-            <div class="cv-date">
+            <div class="cv-date big">
                 <i class="fa fa-calendar"></i><br />
                 Juin 2013<br />
                 Juillet 2013
@@ -38,19 +38,36 @@
                     <br />
                     <small><i class="fa fa-map-marker"></i> Cristeal, Aix en Provence, France</small>
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
+                <ul>
+                    <li>Création d’un extranet à destination des techniciens pour la gestion des parcs informatiques des clients</li>
+                    <li>Mise à jour et maintien du réseau informatique de l’entreprise</li>
+                </ul>
             </div>
         </div>
 
         <h2><i class="fa fa-graduation-cap"></i> Diplômes &amp; Etudes</h2>
 
         <div class="cv-container">
-            <div class="cv-date">
+            <div class="cv-date big">
                 <i class="fa fa-calendar"></i> 2014
             </div>
             <div class="cv-detail">
                 <h4>
-                    BTS IRIS
+                    Expert Informatique et Systèmes d’Information
+                    <br />
+                    <small><i class="fa fa-map-marker"></i> IngéSup, Option SIGL, Aix en Provence, France</small>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i> 2012 - 2014
+            </div>
+            <div class="cv-detail">
+                <h4>
+                    BTS IRIS Programmation Industriel
                     <br />
                     <small><i class="fa fa-map-marker"></i> Lycée Vauvenargues, Aix en Provence, France</small>
                 </h4>
@@ -59,12 +76,12 @@
         </div>
 
         <div class="cv-container">
-            <div class="cv-date">
-                <i class="fa fa-calendar"></i> 2012
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i> 2009 - 2012
             </div>
             <div class="cv-detail">
                 <h4>
-                    BAC Pro SEN TR
+                    BAC Pro SEN Télécommunications Réseaux
                     <br />
                     <small><i class="fa fa-map-marker"></i> Lycée Ampère, Marseille, France</small>
                 </h4>
@@ -111,7 +128,7 @@
         </div>
     </div>
     <div class="cv-right">
-        <h2><i class="fa fa-cogs"></i> Compétances</h2>
+        <h2><i class="fa fa-cogs"></i> Compétences</h2>
 
         <h3><i class="fa fa-code"></i> Programmation</h3>
         <div class="cv-line">

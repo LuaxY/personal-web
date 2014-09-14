@@ -26,6 +26,7 @@ class Conf
 }
 
 Router::connect('','home/index');
+Router::connect('cv','page/cv');
 
 /*
 Router::connect('page/:slug-:id','pages/view/id:([0-9]+)/slug:([a-z0-9\-]+)');
