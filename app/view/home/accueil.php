@@ -2,6 +2,7 @@
 
 {% set background = 'bg_mask.png' %}
 {% set title_left = 'Bienvenue visiteur !' %}
+{% set gradient = true %}
 
 {% block content %}
 <div class="container">
@@ -37,16 +38,5 @@
         <br />
     </div>
 </div>
-<script type="text/javascript">
-$(document).ready(function(){
-    $(".dynamic-color").css({
-        "background-color": "{{ color1 }}",
-        "background": "-webkit-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
-        "background": "   -moz-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
-        "background": "    -ms-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
-        "background": "     -o-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
-        "background": "        linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)"
-    });
-});
-</script>
+<script type="text/javascript">setInterval(updateGradient, 10);</script>
 {% endblock %}

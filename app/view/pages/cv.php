@@ -1,6 +1,6 @@
 {% extends 'layout/default-header.php' %}
 
-{% set background = 'bg_fade.png' %}
+{% set background = 'bg_mask.png' %}
 {% set title_left = 'Yann GUINEAU' %}
 {% set title_right = 'Concepteur & Développeur Logiciel' %}
 {% set pagename = 'cv' %}
@@ -192,6 +192,16 @@
             </div>
         </div>
         <div class="cv-line sub">
+            <div class="columns">Perl</div>
+            <div class="columns">
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square-o"></i>
+            </div>
+        </div>
+        <div class="cv-line sub">
             <div class="columns">Python</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
@@ -203,16 +213,6 @@
         </div>
         <div class="cv-line sub">
             <div class="columns">Ruby</div>
-            <div class="columns">
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-            </div>
-        </div>
-        <div class="cv-line sub">
-            <div class="columns">Perl</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
@@ -421,4 +421,16 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".dynamic-color").css({
+        "background-color": "{{ color1 }}",
+        "background": "-webkit-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "   -moz-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "    -ms-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "     -o-linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)",
+        "background": "        linear-gradient(90deg, {{ color1 }} 10%, {{ color2 }} 90%)"
+    });
+});
+</script>
 {% endblock %}

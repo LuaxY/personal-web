@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ asset('scripts/script.js') }}"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -57,7 +58,6 @@
     </div>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/1.8/gist-embed.min.js"></script>
-    <script src="{{ asset('scripts/script.js') }}"></script>
     <script>checkActiveMenu('{{ pagename }}');</script>
 
     <script type="text/javascript">
