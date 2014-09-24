@@ -20,7 +20,7 @@
                 <h4>
                     Concepteur &amp; Développeur Logiciel
                     <br />
-                    <small><i class="fa fa-map-marker"></i> BULL Amesys RSS à Airbus Helicopters, Marignane, France</small>
+                    <small><i class="fa fa-map-marker"></i> BULL Amesys RSS, Airbus Helicopters, Marignane, France</small>
                 </h4>
                 <p>Prochainement</p>
             </div>
@@ -45,6 +45,79 @@
             </div>
         </div>
 
+        <div class="cv-container">
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i>
+                Mars 2012
+            </div>
+            <div class="cv-detail">
+                <h4>
+                    Administrateur Systèmes
+                    <br />
+                    <small><i class="fa fa-map-marker"></i> Euriware, Marseille, France</small>
+                </h4>
+                <ul>
+                    <li>Maintenance du parc informatique de tous les bâtiments du conseil régional des Bouches du Rhône</li>
+                    <li>Administration de serveurs de virtualisation Citrix</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i>
+                Janvier 2012
+            </div>
+            <div class="cv-detail">
+                <h4>
+                    Administrateur Systèmes
+                    <br />
+                    <small><i class="fa fa-map-marker"></i> Centre Hospitalier, Manosque, France</small>
+                </h4>
+                <ul>
+                    <li>Administration et maintenance de l’infrastructure réseau du centre hospitalier de Manosque</li>
+                    <li>Administration de serveurs de virtualisation VMware</li>
+                    <li>Approfondissement de l’utilisation de serveurs Windows et Linux</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i>
+                Mars 2011
+            </div>
+            <div class="cv-detail">
+                <h4>
+                    Technicien Informatique
+                    <br />
+                    <small><i class="fa fa-map-marker"></i> GRCS, Marseille, France</small>
+                </h4>
+                <ul>
+                    <li>Maintenance du parc informatique d’une dizaine d’entreprises</li>
+                    <li>Administration de serveurs Windows</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i>
+                Janvier 2011
+            </div>
+            <div class="cv-detail">
+                <h4>
+                    Technicien Télécom
+                    <br />
+                    <small><i class="fa fa-map-marker"></i> France Télécom, Manosque, France</small>
+                </h4>
+                <ul>
+                    <li>Découverte des réseaux téléphoniques de France Télécom</li>
+                    <li>Maintenance des Noeuds de Raccordement des Abonnés (NRA)</li>
+                </ul>
+            </div>
+        </div>
+
         <br />
 
         <h2><i class="fa fa-graduation-cap"></i> Diplômes &amp; Etudes</h2>
@@ -59,7 +132,7 @@
                     <br />
                     <small><i class="fa fa-map-marker"></i> IngéSup, Option SIGL, Aix en Provence, France</small>
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
+                <p></p>
             </div>
         </div>
 
@@ -73,7 +146,7 @@
                     <br />
                     <small><i class="fa fa-map-marker"></i> Lycée Vauvenargues, Aix en Provence, France</small>
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
+                <p></p>
             </div>
         </div>
 
@@ -87,7 +160,7 @@
                     <br />
                     <small><i class="fa fa-map-marker"></i> Lycée Ampère, Marseille, France</small>
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non pulvinar augue. Etiam faucibus felis erat. Vestibulum non nisl ultrices, viverra est vel, mattis libero. Ut finibus consectetur quam vel rutrum. Aliquam at pharetra augue, ac ullamcorper erat. Ut nulla risus, condimentum vitae facilisis eu, congue vel justo. Vivamus purus ligula, feugiat non placerat hendrerit, placerat nec lectus. Vivamus sit amet massa condimentum, pulvinar felis vitae, sagittis ipsum. Donec pharetra, massa accumsan faucibus rhoncus, orci orci dignissim dui, quis commodo lacus augue at nisl. Integer id quam sit amet quam elementum eleifend. Mauris commodo congue turpis non congue. Vestibulum vitae iaculis ligula, non viverra dolor. Donec et ante sed metus lobortis hendrerit.</p>
+                <p></p>
             </div>
         </div>
 
@@ -100,7 +173,7 @@
                 <i class="fa fa-calendar"></i> 2014
             </div>
             <div class="cv-detail">
-                <p>WorldSkills PACA - SysAdmin : Or</p>
+                <p><img src="images/medal_gold.png" />&nbsp; WorldSkills PACA - SysAdmin : Or</p>
             </div>
         </div>
 
@@ -109,7 +182,7 @@
                 <i class="fa fa-calendar"></i> 2012
             </div>
             <div class="cv-detail">
-                <p>WorldSkills PACA - SysAdmin : Argent</p>
+                <p><img src="images/medal_silver.png" />&nbsp; WorldSkills PACA - SysAdmin : Argent</p>
             </div>
         </div>
 
@@ -224,6 +297,16 @@
         <br />
 
         <div class="cv-line">
+            <div class="columns">ActionScript 3</div>
+            <div class="columns">
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square-o"></i>
+            </div>
+        </div>
+        <div class="cv-line">
             <div class="columns">Assembleur</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
@@ -234,11 +317,11 @@
             </div>
         </div>
         <div class="cv-line">
-            <div class="columns">ActionScript 3</div>
+            <div class="columns">D Lang</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
                 <i class="fa fa-square-o"></i>
                 <i class="fa fa-square-o"></i>
             </div>
@@ -314,7 +397,7 @@
             <div class="columns">&nbsp;</div>
         </div>
         <div class="cv-line sub">
-            <div class="columns">MySQL</div>
+            <div class="columns">MySQL <sub> &amp; MariaDB</sub></div>
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
@@ -335,6 +418,43 @@
         </div>
         <div class="cv-line sub">
             <div class="columns">NoSQL</div>
+            <div class="columns">
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square-o"></i>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="cv-line">
+            <div class="columns">Virtualisation</div>
+            <div class="columns">&nbsp;</div>
+        </div>
+        <div class="cv-line sub">
+            <div class="columns">VMware</div>
+            <div class="columns">
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
+            </div>
+        </div>
+        <div class="cv-line sub">
+            <div class="columns">Citrix</div>
+            <div class="columns">
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square-o"></i>
+            </div>
+        </div>
+        <div class="cv-line sub">
+            <div class="columns">KVM / QEMU</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>

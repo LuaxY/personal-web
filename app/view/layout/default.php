@@ -18,6 +18,7 @@
                 <ul class="header-navbar">
                     <li><a href="{{ url('') }}" name="home">Luax</a></li>
                     <li><a href="{{ url('blog') }}" name="blog">Blog</a></li>
+                    <li><a href="{{ url('cv') }}" name="cv">CV</a></li>
                 </ul>
 
                 <!--<form class="header-search pull-right" action="{{ url('') }}" method="GET">
@@ -41,6 +42,7 @@
                 <dt>Luax</dt>
                 <dd><a href="{{ url('') }}">A propos</a></dd>
                 <dd><a href="{{ url('blog') }}">Blog</a></dd>
+                <dd><a href="{{ url('cv') }}">CV</a></dd>
                 <dd><a href="mailto:yann.guineau@voidmx.net">Contact</a></dd>
             </dl>
             <dl class="footer-nav">
