@@ -64,9 +64,19 @@ var colors = new Array(
 var step = 0;
 var colorIndices = [0,1,2,3];
 var gradientSpeed = 0.002;
+var isStarted = false;
 
-function updateGradient()
-{
+function activeDynamicColor() {
+    if(!isStarted)
+    {
+        isStarted = true;
+        updateGradient();
+    }
+}
+
+function updateGradient() {
+    setTimeout(updateGradient, 10);
+
     var c0_0 = colors[colorIndices[0]];
     var c0_1 = colors[colorIndices[1]];
     var c1_0 = colors[colorIndices[2]];

@@ -38,5 +38,5 @@
         <br />
     </div>
 </div>
-<script type="text/javascript">setInterval(updateGradient, 10);</script>
+<script type="text/javascript">activeDynamicColor();</script>
 {% endblock %}
