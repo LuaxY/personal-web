@@ -2,12 +2,18 @@
 <html lang="fr">
 <head>
     <title>{% if title is defined %}{{ title }} - {% endif %}{{ webtitle }}</title>
+
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Jeune passionné d'informatique et de programmation industrielle je un développeur logiciels spécialisé dans les systèmes embarqués." />
+    <meta name="keywords" content="yann, guineau, programmation, developpement, c, c++, php, web, cisco, ccna, reverse engineering, real time" /> 
+
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.gif') }}" />
     <link rel="stylesheet" href="{{ asset('styles/milk.min.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ asset('scripts/script.js') }}"></script>
 </head>
