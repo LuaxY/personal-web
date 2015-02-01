@@ -20,9 +20,11 @@
                 <h4>
                     Concepteur &amp; Développeur Logiciel
                     <br />
-                    <small><i class="fa fa-map-marker"></i> BULL Amesys RSS, Airbus Helicopters, Marignane, France</small>
+                    <small><i class="fa fa-map-marker"></i> Amesys Bull@Atos, Airbus Helicopters, Marignane, France</small>
                 </h4>
-                <p>Prochainement</p>
+                <ul>
+                    <li>Création d'un outil de supervision des bancs de test pour hélicopters</li>
+                </ul>
             </div>
         </div>
 
@@ -130,7 +132,7 @@
                 <h4>
                     Expert Informatique et Systèmes d’Information
                     <br />
-                    <small><i class="fa fa-map-marker"></i> IngéSup, Option SIGL, Aix en Provence, France</small>
+                    <small><i class="fa fa-map-marker"></i> Y-nov Ingéqup, Aix en Provence, France</small>
                 </h4>
                 <p></p>
             </div>
@@ -167,6 +169,15 @@
         <br />
 
         <h2><i class="fa fa-star-o"></i> Certifications</h2>
+
+        <div class="cv-container">
+            <div class="cv-date">
+                <i class="fa fa-calendar"></i> 2015
+            </div>
+            <div class="cv-detail">
+                <p>WorldSkills France - SysAdmin : 5ème</p>
+            </div>
+        </div>
 
         <div class="cv-container">
             <div class="cv-date">
@@ -279,8 +290,8 @@
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
@@ -350,7 +361,7 @@
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
@@ -386,7 +397,7 @@
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
