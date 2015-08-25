@@ -55,7 +55,7 @@
                 <dt>Retrouvez moi...</dt>
                 <dd><a href="https://twitter.com/LuaxY_" target="_blank">sur Twitter</a></dd>
                 <dd><a href="https://github.com/LuaxY" target="_blank">sur GitHub</a></dd>
-                <dd><a href="https://bitbucket.org/LuaxY" target="_blank">sur BitBucket</a></dd>
+                <!--<dd><a href="https://bitbucket.org/LuaxY" target="_blank">sur BitBucket</a></dd>-->
                 <dd><a href="skype:yann.0x?add">sur Skype</a></dd>
             </dl>
             <div class="clearfix"></div>

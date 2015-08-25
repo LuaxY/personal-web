@@ -264,6 +264,12 @@ span.li-second {
     line-height: 20px;
 }
 
+.post p a:hover {
+    color: #ffffff;
+    background-color: #0072C6;
+    text-decoration: none;
+}
+
 .table {
     background-color: #ffffff;
 }
