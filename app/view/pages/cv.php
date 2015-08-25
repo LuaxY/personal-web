@@ -23,7 +23,8 @@
                     <small><i class="fa fa-map-marker"></i> Amesys Bull@Atos, Airbus Helicopters, Marignane, France</small>
                 </h4>
                	<ul>
-		    <li>Création d'un outil de supervision des bancs de test pour hélicopters</li>
+                    <li>Création d'un outil de supervision des bancs de test pour hélicopters</li>
+                    <li>Développement d'un logiciel de test avionique</li>
 		</ul>
             </div>
         </div>
@@ -126,7 +127,7 @@
 
         <div class="cv-container">
             <div class="cv-date big">
-                <i class="fa fa-calendar"></i> 2014
+                <i class="fa fa-calendar"></i> 2014 - 2015
             </div>
             <div class="cv-detail">
                 <h4>
