@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/1.8/gist-embed.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js"></script>
     <script>checkActiveMenu('{{ pagename }}');</script>
 
     <script type="text/javascript">
