@@ -182,6 +182,15 @@
 
         <div class="cv-container">
             <div class="cv-date">
+                <i class="fa fa-calendar"></i> 2015
+            </div>
+            <div class="cv-detail">
+                <p>WorldSkills France - SysAdmin : 5ème</p>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date">
                 <i class="fa fa-calendar"></i> 2014
             </div>
             <div class="cv-detail">
