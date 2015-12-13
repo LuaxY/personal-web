@@ -2,7 +2,7 @@
 
 {% set background = 'bg_mask.png' %}
 {% set title_left = 'Yann GUINEAU' %}
-{% set title_right = 'Concepteur & Développeur Logiciel' %}
+{% set title_right = 'Ninja Developer' %}
 {% set pagename = 'cv' %}
 
 {% block content %}
@@ -176,6 +176,15 @@
                 <i class="fa fa-calendar"></i> 2015
             </div>
             <div class="cv-detail">
+                <p>La Nuit de l'Info : <img src="images/medal_bronze.png" /> <img src="images/medal_bronze.png" /></p>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date">
+                <i class="fa fa-calendar"></i> 2015
+            </div>
+            <div class="cv-detail">
                 <p>WorldSkills France - SysAdmin : 5ème</p>
             </div>
         </div>
@@ -185,7 +194,7 @@
                 <i class="fa fa-calendar"></i> 2014
             </div>
             <div class="cv-detail">
-                <p>La Nuit de l'Info : <img src="images/medal_gold.png" /> et <img src="images/medal_silver.png" /></p>
+                <p>La Nuit de l'Info : <img src="images/medal_gold.png" /> <img src="images/medal_silver.png" /></p>
             </div>
         </div>
 

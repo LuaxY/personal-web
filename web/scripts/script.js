@@ -24,7 +24,7 @@ $(window).bind('popstate', function(event) {
 
 function loadPage(url)
 {
-    $("#page").html('<div align="center" style="margin-top:100px"><img src="http://yann.voidmx.net/images/loader.gif" /><br /><br />Chargement en cours...</div>');
+    $("#page").html('<div align="center" style="margin-top:100px"><img src="/images/loader.gif" /><br /><br />Chargement en cours...</div>');
 
     $.ajax({
         url: url,

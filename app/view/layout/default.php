@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="{{ asset('styles/milk.min.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/default.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/octicons.css') }}">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ asset('scripts/script.js') }}"></script>
 </head>
 <body>
@@ -60,26 +60,12 @@
             </dl>
             <div class="clearfix"></div>
             <hr class="divider" />
-            <p class="pull-right"><span class="octicon octicon-code"></span> avec <span class="octicon octicon-heart"></span> par <a href="https://github.com/LuaxY/personal-web" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> sur <a href="http://steamdb.info/">SteamDB</a></p>
+            <p class="pull-right"><span class="octicon octicon-code"></span> avec <span class="octicon octicon-heart"></span> par <a href="https://github.com/LuaxY/personal-web" target="_blank">Luax</a>, design <span class="octicon octicon-repo-forked"></span> sur <a href="https://steamdb.info/">SteamDB</a></p>
             <p class="copyright"><span class="octicon octicon-star"></span> <a href="{{ url('') }}">Luax</a> {{ "now"|date('Y') }}, dernière mise à jour le {{ date_fr(last_update, 'j F Y à H:i') }}</p>
         </div>
     </div>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js"></script>
     <script>checkActiveMenu('{{ pagename }}');</script>
-
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://{{ piwik.url }}";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', {{ piwik.id }}]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="http://{{ piwik.url }}piwik.php?idsite={{ piwik.id }}" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
