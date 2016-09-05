@@ -13,8 +13,26 @@
         <div class="cv-container">
             <div class="cv-date big">
                 <i class="fa fa-calendar"></i><br />
-                Septembre 2014<br />
+                Septembre 2016<br />
                 Maintenant
+            </div>
+            <div class="cv-detail">
+                <h4>
+                    Développeur Web
+                    <br />
+                    <small><i class="fa fa-map-marker"></i> Digital Virgo Entertainment, Aix en Provence, France</small>
+                </h4>
+                <ul>
+                    <li>Prochainement...</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-container">
+            <div class="cv-date big">
+                <i class="fa fa-calendar"></i><br />
+                Septembre 2014<br />
+                Juillet 2016
             </div>
             <div class="cv-detail">
                 <h4>
@@ -127,7 +145,7 @@
 
         <div class="cv-container">
             <div class="cv-date big">
-                <i class="fa fa-calendar"></i> 2014 - 2015
+                <i class="fa fa-calendar"></i> 2014 - 2017
             </div>
             <div class="cv-detail">
                 <h4>
@@ -341,12 +359,12 @@
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
         <div class="cv-line">
-            <div class="columns">Assembleur</div>
+            <div class="columns">Assembleur x86</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
@@ -355,17 +373,6 @@
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
-        <div class="cv-line">
-            <div class="columns">D Lang</div>
-            <div class="columns">
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-            </div>
-        </div>
-
         <br />
 
         <h3><i class="fa fa-database"></i> SysAdmin</h3>
@@ -380,7 +387,7 @@
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
             </div>
         </div>
         <div class="cv-line sub">
@@ -397,8 +404,8 @@
             <div class="columns">Mac OS X</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
                 <i class="fa fa-square-o"></i>
             </div>
@@ -441,7 +448,7 @@
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
@@ -457,43 +464,6 @@
         </div>
         <div class="cv-line sub">
             <div class="columns">NoSQL</div>
-            <div class="columns">
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-            </div>
-        </div>
-
-        <br />
-
-        <div class="cv-line">
-            <div class="columns">Virtualisation</div>
-            <div class="columns">&nbsp;</div>
-        </div>
-        <div class="cv-line sub">
-            <div class="columns">VMware</div>
-            <div class="columns">
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-            </div>
-        </div>
-        <div class="cv-line sub">
-            <div class="columns">Citrix</div>
-            <div class="columns">
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-square-o"></i>
-            </div>
-        </div>
-        <div class="cv-line sub">
-            <div class="columns">KVM / QEMU</div>
             <div class="columns">
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
@@ -522,7 +492,7 @@
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
                 <i class="fa fa-square"></i>
-                <i class="fa fa-square-o"></i>
+                <i class="fa fa-square"></i>
                 <i class="fa fa-square-o"></i>
             </div>
         </div>
@@ -572,11 +542,11 @@
         <h3><i class="fa fa-language"></i> Langues</h3>
         <div class="cv-line">
             <div class="columns">Français</div>
-            <div class="columns">Courant</div>
+            <div class="columns">Maternelle</div>
         </div>
         <div class="cv-line">
             <div class="columns">Anglais</div>
-            <div class="columns">Technique</div>
+            <div class="columns">Courant</div>
         </div>
     </div>
 </div>
