@@ -16,7 +16,7 @@ class Request
 
     function __construct()
     {
-        $this->url = isset($_SERVER['PATH_INFO'])?$_SERVER['PATH_INFO']:'/';
+        $this->url = isset($_SERVER['REQUEST_URI'])?$_SERVER['REQUEST_URI']:'/';
 
         if(isset($_GET['page']))
         {
