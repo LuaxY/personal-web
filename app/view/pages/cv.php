@@ -23,7 +23,7 @@
                     <small><i class="fa fa-map-marker"></i> Digital Virgo Entertainment, Aix en Provence, France</small>
                 </h4>
                 <ul>
-                    <li>Prochainement...</li>
+                    <li>Développement d'un CRM</li>
                 </ul>
             </div>
         </div>
@@ -188,6 +188,15 @@
         <br />
 
         <h2><i class="fa fa-star-o"></i> Certifications & Concours</h2>
+
+        <div class="cv-container">
+            <div class="cv-date">
+                <i class="fa fa-calendar"></i> 2016
+            </div>
+            <div class="cv-detail">
+                <p>Prix de l'étudiant le plus technique - Ynov Campus Aix</p>
+            </div>
+        </div>
 
         <div class="cv-container">
             <div class="cv-date">
